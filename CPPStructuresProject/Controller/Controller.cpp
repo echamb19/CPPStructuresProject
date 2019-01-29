@@ -10,5 +10,5 @@
 
 void Controller :: start()
 {
-    cout << "Welcome to the Datta Structures App." << endl; 
+    cout << "Welcome to the Data Structures App." << endl; 
 }
