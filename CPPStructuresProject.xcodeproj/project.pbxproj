@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC19D1421FF8BE400FA8D90 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		DBC19D1521FF8BE400FA8D90 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -50,6 +51,14 @@
 				DB81CE7B220232DE00FAB87B /* LinearNode.hpp */,
 			);
 			path = Nodes;
+			sourceTree = "<group>";
+		};
+		DB81CE7C22023A1F00FAB87B /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CE7D22023A5700FAB87B /* Array.hpp */,
+			);
+			path = Linear;
 			sourceTree = "<group>";
 		};
 		DBC19CFD21FF8B1B00FA8D90 = {
@@ -82,6 +91,7 @@
 		DBC19D1021FF8B7C00FA8D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB81CE7C22023A1F00FAB87B /* Linear */,
 				DB81CE79220226A200FAB87B /* Nodes */,
 			);
 			path = Model;
