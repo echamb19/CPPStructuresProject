@@ -70,7 +70,7 @@ Array<Type> :: ~Array() //The ~ is for destructors only and cannot be overridden
 }
 
 template <class Type>
-Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
+Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)  //We made an array that works like the Array's in Java
 {
     if(&toAssign != this)
     {
@@ -97,7 +97,7 @@ Type & Array<Type> :: operator [] (int index)
 }
 
 template <class Type>
-Type Array<Type> :; operator [] (int index)
+Type Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size)
     return internalArray[index]
