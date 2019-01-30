@@ -17,13 +17,18 @@ class Node
 private:
     Type data;
 public:
+    Node();
     Node(Type data);
     Type getData();
     void setData(Type data);
 };
 
-//Template definitions
+//C++ needs an empty constructor or it is confused                                     
+template <class Type>
+Node<Type> :: Node()
+{}
 
+//Template definitions
 template <class Type>
 Node<Type> :: Node(Type data)
 {
