@@ -10,9 +10,14 @@
 
 void Controller :: start()
 {
-    cout << "Welcome to the Data Structures App." << endl; 
-    Node<int> mine(5);
-    Node<string> wordHolder("Words can be stored too!");
+    cout << "Welcome to the Data Structures App." << endl;
+    usingNodes();
+}
+
+void Controller :: usingNodes()
+{
+    LinearNode<int> mine(5);
+    LinearNode<string> wordHolder("Words can be stored too!");
     cout << mine.getData() << endl;
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
