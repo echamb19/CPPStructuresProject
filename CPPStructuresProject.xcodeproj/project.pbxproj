@@ -31,6 +31,7 @@
 		DBC19D1521FF8BE400FA8D90 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		DBC19D1721FF8BF000FA8D90 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		DBC19D1921FF912800FA8D90 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		DBD5D9DE2204D41800A51206 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		DBC19D1021FF8B7C00FA8D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DBD5D9DF2204D8A300A51206 /* NonLinear */,
 				DB81CE7C22023A1F00FAB87B /* Linear */,
 				DB81CE79220226A200FAB87B /* Nodes */,
 			);
@@ -119,6 +121,14 @@
 			children = (
 			);
 			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		DBD5D9DF2204D8A300A51206 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				DBD5D9DE2204D41800A51206 /* Graph.hpp */,
+			);
+			path = NonLinear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
