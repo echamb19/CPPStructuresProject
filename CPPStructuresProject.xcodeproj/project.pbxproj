@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB2EEC0B2208BC75001D9CDA /* ListStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListStructure.h; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB2EEC0A2208BC0F001D9CDA /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EEC0B2208BC75001D9CDA /* ListStructure.h */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
 		DB81CE79220226A200FAB87B /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +101,7 @@
 		DBC19D1021FF8B7C00FA8D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB2EEC0A2208BC0F001D9CDA /* Structures */,
 				DBD5D9DF2204D8A300A51206 /* NonLinear */,
 				DB81CE7C22023A1F00FAB87B /* Linear */,
 				DB81CE79220226A200FAB87B /* Nodes */,

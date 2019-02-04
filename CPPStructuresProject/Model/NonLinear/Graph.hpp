@@ -282,7 +282,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
         }
     }
     
-    return cost; 
+    return cost;
 }
 
 #endif /* Graph_h */
