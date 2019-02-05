@@ -44,6 +44,8 @@
 		DBD4FECC220A206700FDB228 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		DBD4FECE220A210A00FDB228 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		DBD4FED0220A210F00FDB228 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
+		DBD4FED1220A21E300FDB228 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		DBD4FED2220A222500FDB228 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DBD5D9DE2204D41800A51206 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,8 @@
 		DBC19D1221FF8B8D00FA8D90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DBD4FED2220A222500FDB228 /* music.csv */,
+				DBD4FED1220A21E300FDB228 /* crime.csv */,
 				DBD4FED0220A210F00FDB228 /* Music.hpp */,
 				DBD4FECE220A210A00FDB228 /* Music.cpp */,
 				DBD4FECC220A206700FDB228 /* CrimeData.cpp */,
