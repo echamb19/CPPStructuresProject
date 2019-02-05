@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DBC19D1621FF8BE400FA8D90 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1421FF8BE400FA8D90 /* Controller.cpp */; };
 		DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1721FF8BF000FA8D90 /* Runner.cpp */; };
+		DBD4FEC6220A160600FDB228 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FEC4220A160600FDB228 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		DBC19D1521FF8BE400FA8D90 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		DBC19D1721FF8BF000FA8D90 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		DBC19D1921FF912800FA8D90 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		DBD4FEC4220A160600FDB228 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		DBD4FEC5220A160600FDB228 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		DBD5D9DE2204D41800A51206 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,7 @@
 		DBC19D1121FF8B8600FA8D90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBD4FEC3220A152400FDB228 /* Tools */,
 				DBC19D1721FF8BF000FA8D90 /* Runner.cpp */,
 				DBC19D1421FF8BE400FA8D90 /* Controller.cpp */,
 				DBC19D1521FF8BE400FA8D90 /* Controller.hpp */,
@@ -131,6 +135,15 @@
 			children = (
 			);
 			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		DBD4FEC3220A152400FDB228 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DBD4FEC4220A160600FDB228 /* Timer.cpp */,
+				DBD4FEC5220A160600FDB228 /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		DBD5D9DF2204D8A300A51206 /* NonLinear */ = {
@@ -197,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD4FEC6220A160600FDB228 /* Timer.cpp in Sources */,
 				DBC19D1621FF8BE400FA8D90 /* Controller.cpp in Sources */,
 				DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */,
 			);
