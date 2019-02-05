@@ -9,8 +9,8 @@
 #ifndef FileController_hpp
 #define FileController_hpp
 
-#include "../Resources/ChrimeData.hpp"
-#include "../Reesources/Music.hpp"
+#include "../Resources/CrimeData.hpp"
+#include "../Resources/Music.hpp"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -20,8 +20,8 @@
 class FileController
 {
 public:
-    statec vector<CrimeData> readCrimeDataToVector(string filename);
-    static vector<Music> musicDataToVector(sting filename);
+    static vector<CrimeData> readCrimeDataToVector(string filename);
+    static vector<Music> musicDataToVector(string filename);
 };
 
 #endif /* FileController_hpp */

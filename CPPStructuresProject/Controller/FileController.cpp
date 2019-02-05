@@ -23,7 +23,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         while (!dataFile.eof())
         {
             // Grab each line from the CSV separated by the carriage return character
-            getline(dataFile, currrentCSVLine, '\r');
+            getline(dataFile, currentCSVLine, '\r');
             // Exclude header row
             if (rowCount != 0)
             {
@@ -36,7 +36,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             }
             rowCount++;
         }
-        datafile.close();
+        dataFile.close();
     }
     else
     {
@@ -52,7 +52,7 @@ vector<Music> FileController :: musicDataToVector(string filename)
     string currentCSVLine;
     int rowCount = 0;
     
-    ifstream dataFile(filename)
+    ifstream dataFile(filename);
     
     // Exists?
     if (dataFile. is_open())
@@ -63,12 +63,12 @@ vector<Music> FileController :: musicDataToVector(string filename)
             // Grab each line
             getline(dataFile, currentCSVLine, '\r');
             // Exclude header row
-            if (rowCount = 0)
+            if (rowCount != 0)
             {
                 //Createa Music instance from line. Exclude a blank line
                 if(currentCSVLine.length() != 0)
                 {
-                    Music row(CurrentCSVLine);
+                    Music row(currentCSVLine);
                     musicVector.push_back(row);
                 }
             }
