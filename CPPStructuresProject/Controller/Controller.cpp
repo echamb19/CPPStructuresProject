@@ -7,11 +7,14 @@
 //
 
 #include "Controller.hpp"
+#include "FileController.hpp"
 
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
-    usingNodes();
+//    usingNodes();
+    testFiles();
+    
 }
 
 void Controller :: usingNodes()
@@ -22,4 +25,17 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
     cout << wordHolder.getData() << endl;
+
+
+}
+
+void testFiles()
+{
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
+    
+    for (int index = 234; index < 256; index++)
+    {
+        cout << index << ": contents are: " << crimes[index] << endl;
+    }
+        
 }

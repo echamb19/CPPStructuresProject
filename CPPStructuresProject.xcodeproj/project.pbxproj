@@ -115,10 +115,10 @@
 		DBC19D1021FF8B7C00FA8D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DB2EEC0A2208BC0F001D9CDA /* Structures */,
-				DBD5D9DF2204D8A300A51206 /* NonLinear */,
 				DB81CE7C22023A1F00FAB87B /* Linear */,
 				DB81CE79220226A200FAB87B /* Nodes */,
+				DBD5D9DF2204D8A300A51206 /* NonLinear */,
+				DB2EEC0A2208BC0F001D9CDA /* Structures */,
 			);
 			path = Model;
 			sourceTree = "<group>";
