@@ -171,4 +171,22 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
 }
 
+template<class Type>
+LinearNode<Type> * LinkedList<Type> :: getEnd()
+{
+    return this->end;
+}
+
+template<class Type>
+LinearNode<Type> * LinkeList<Type> :: getFront()
+{
+    return this->front;
+}
+
+template<class Type>
+int LinkedList<Type> :: getSize() const
+{
+    return this->size;
+}
+
 #endif /* LinkedList_h */
