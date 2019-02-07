@@ -60,6 +60,25 @@ LinkedList<Type> :: ~LinkedList()
     }
 }
 
+template<class Type>
+void LinkedList<Type> :: add(Type item)
+{
+    LinearNode<Type> * newData = new LinearNode<Type>(item);
+    
+    if(this-> size == 0)
+    {
+        this->front = newData;
+    }
+    else
+    {
+        this->end->setNextNode(newData);
+    }
+    
+    this->end = newData;
+    
+    this->size += 1;
+}
+
 
 
 #endif /* LinkedList_h */
