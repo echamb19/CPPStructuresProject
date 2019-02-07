@@ -40,6 +40,26 @@ public:
 //    bool contains(Type item);
 };
 
+template <class Type>
+LinkedList<Type> :: LinkedList()
+{
+    this->front = nullprt;
+    this->end = nullprt;
+    this->size = 0;
+}
+
+template<class Type>
+LinkedList<Type> :: ~LinkedList()
+{
+    LinearNode<Type> * destroyStructure = front;
+    while (front != nullprt)
+    {
+        front = destroyStructure->getNextNode();
+        delete destroyStructure;
+        destroyStructure = front;
+    }
+}
+
 
 
 #endif /* LinkedList_h */
