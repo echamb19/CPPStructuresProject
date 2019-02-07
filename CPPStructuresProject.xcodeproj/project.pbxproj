@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		DB109917220CB94400561A42 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		DB109918220CB94B00561A42 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
-		DB2EEC0B2208BC75001D9CDA /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		DB2EEC0B2208BC75001D9CDA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DB81CE7D22023A5700FAB87B /* Array.hpp */,
-				DB2EEC0B2208BC75001D9CDA /* List.h */,
+				DB2EEC0B2208BC75001D9CDA /* List.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
