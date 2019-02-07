@@ -10,7 +10,7 @@
 #define ListStructure_h
 
 #include <assert.h>
-#include "../../Noces/LinearNode.hpp"
+#include "../../Nodes/LinearNode.hpp"
 
 template <class Type>
 class List
@@ -18,12 +18,12 @@ class List
 protected:
     int size;
 public:
-    //Structure
-    virtual void add(Type item) = 0;
-    virtual void addAtIndex(int index, Type item) = 0;
+    //Structure / List Operations
+    virtual void add(Type item) = 0;    // Is both a number and the representation of numbers
+    virtual void addAtIndex(int index, Type item) = 0;  // The 0 means its 'not real'
     virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
-    //Helper
+    //Helper accessor methods
     virtual int getSize() const = 0;
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
