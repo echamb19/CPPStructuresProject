@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB109919220CB94B00561A42 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB109918220CB94B00561A42 /* Music.cpp */; };
 		DBC19D1621FF8BE400FA8D90 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1421FF8BE400FA8D90 /* Controller.cpp */; };
 		DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1721FF8BF000FA8D90 /* Runner.cpp */; };
 		DBD4FEC6220A160600FDB228 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FEC4220A160600FDB228 /* Timer.cpp */; };
 		DBD4FEC9220A19B700FDB228 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FEC7220A19B700FDB228 /* FileController.cpp */; };
 		DBD4FECD220A206700FDB228 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FECC220A206700FDB228 /* CrimeData.cpp */; };
-		DBD4FECF220A210B00FDB228 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FECE220A210A00FDB228 /* Music.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB109917220CB94400561A42 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
+		DB109918220CB94B00561A42 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		DB2EEC0B2208BC75001D9CDA /* ListStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListStructure.h; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		DBD4FEC8220A19B700FDB228 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		DBD4FECB220A206000FDB228 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		DBD4FECC220A206700FDB228 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
-		DBD4FECE220A210A00FDB228 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
-		DBD4FED0220A210F00FDB228 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		DBD4FED1220A21E300FDB228 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		DBD4FED2220A222500FDB228 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DBD5D9DE2204D41800A51206 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
@@ -139,10 +139,10 @@
 		DBC19D1221FF8B8D00FA8D90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DB109918220CB94B00561A42 /* Music.cpp */,
+				DB109917220CB94400561A42 /* Music.hpp */,
 				DBD4FED2220A222500FDB228 /* music.csv */,
 				DBD4FED1220A21E300FDB228 /* crime.csv */,
-				DBD4FED0220A210F00FDB228 /* Music.hpp */,
-				DBD4FECE220A210A00FDB228 /* Music.cpp */,
 				DBD4FECC220A206700FDB228 /* CrimeData.cpp */,
 				DBD4FECB220A206000FDB228 /* CrimeData.hpp */,
 			);
@@ -232,9 +232,9 @@
 				DBD4FEC6220A160600FDB228 /* Timer.cpp in Sources */,
 				DBD4FECD220A206700FDB228 /* CrimeData.cpp in Sources */,
 				DBC19D1621FF8BE400FA8D90 /* Controller.cpp in Sources */,
-				DBD4FECF220A210B00FDB228 /* Music.cpp in Sources */,
 				DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */,
 				DBD4FEC9220A19B700FDB228 /* FileController.cpp in Sources */,
+				DB109919220CB94B00561A42 /* Music.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
