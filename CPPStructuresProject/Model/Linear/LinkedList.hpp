@@ -109,6 +109,24 @@ void LinkedList<Type> :: addAtIndexJ(int index, Type item)
     }
 }
 
+template<class Type>
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data:
+    
+    LinearNode<Type> * current = front;
+    
+    for (int position = 0; position < index; possition++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
+
 
 
 #endif /* LinkedList_h */
