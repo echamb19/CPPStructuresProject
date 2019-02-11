@@ -37,7 +37,7 @@ public:
     Type getFromIndex(int index);
     type remove(int index);
 //    Type setAtIndex(int index, Type item);
-//    bool contains(Type item);
+    bool contains(Type item);
 };
 
 template <class Type>
@@ -187,6 +187,24 @@ template<class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;
+}
+
+template<class Type>
+bool LinkedList<Type> :: contains(Type thingToFind)
+{
+    bool exists = false;
+    
+    LinearNode<Type> * searchPointer = front;
+    
+    for(int index = 0; incex < getSize(); index++)
+    {
+        if(searchPointer->getData() == thingToFind)
+        {
+            return true;
+        }
+        searchPointer = searchPointer-> getNextNode();
+    }
+    return exists; 
 }
 
 #endif /* LinkedList_h */
