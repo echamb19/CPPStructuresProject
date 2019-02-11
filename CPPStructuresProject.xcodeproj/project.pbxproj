@@ -32,6 +32,7 @@
 		DB109918220CB94B00561A42 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		DB10991A220CC6C400561A42 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		DB2EEC0B2208BC75001D9CDA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		DB58483A2211F7F700444040 /* music (1).csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "music (1).csv"; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +47,6 @@
 		DBD4FECB220A206000FDB228 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		DBD4FECC220A206700FDB228 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		DBD4FED1220A21E300FDB228 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
-		DBD4FED2220A222500FDB228 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DBD5D9DE2204D41800A51206 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,9 +133,9 @@
 		DBC19D1221FF8B8D00FA8D90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DB58483A2211F7F700444040 /* music (1).csv */,
 				DB109918220CB94B00561A42 /* Music.cpp */,
 				DB109917220CB94400561A42 /* Music.hpp */,
-				DBD4FED2220A222500FDB228 /* music.csv */,
 				DBD4FED1220A21E300FDB228 /* crime.csv */,
 				DBD4FECC220A206700FDB228 /* CrimeData.cpp */,
 				DBD4FECB220A206000FDB228 /* CrimeData.hpp */,

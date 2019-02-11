@@ -80,7 +80,7 @@ void LinkedList<Type> :: add(Type item)
 }
 
 template<class Type>
-void LinkedList<Type> :: addAtIndexJ(int index, Type item)
+void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this->size);
     if(index == this->size)
