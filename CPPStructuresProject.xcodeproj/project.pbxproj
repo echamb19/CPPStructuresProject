@@ -34,6 +34,7 @@
 		DB2EEC0B2208BC75001D9CDA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		DB58483D221200BF00444040 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DB58483E2212108200444040 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		DB58483F2212189200444040 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,7 @@
 				DB2EEC0B2208BC75001D9CDA /* List.hpp */,
 				DB10991A220CC6C400561A42 /* LinkedList.hpp */,
 				DB58483E2212108200444040 /* Queue.hpp */,
+				DB58483F2212189200444040 /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
