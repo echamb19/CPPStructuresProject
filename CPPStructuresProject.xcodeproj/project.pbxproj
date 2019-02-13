@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB109919220CB94B00561A42 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB109918220CB94B00561A42 /* Music.cpp */; };
+		DB6774452214AEA100110EF9 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB6774432214AEA100110EF9 /* LinearTester.cpp */; };
 		DBC19D1621FF8BE400FA8D90 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1421FF8BE400FA8D90 /* Controller.cpp */; };
 		DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC19D1721FF8BF000FA8D90 /* Runner.cpp */; };
 		DBD4FEC6220A160600FDB228 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBD4FEC4220A160600FDB228 /* Timer.cpp */; };
@@ -35,6 +36,8 @@
 		DB58483D221200BF00444040 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DB58483E2212108200444040 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		DB58483F2212189200444040 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		DB6774432214AEA100110EF9 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
+		DB6774442214AEA100110EF9 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 		DB81CE7B220232DE00FAB87B /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB6774422214AE5B00110EF9 /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				DB6774432214AEA100110EF9 /* LinearTester.cpp */,
+				DB6774442214AEA100110EF9 /* LinearTester.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
 		DB81CE79220226A200FAB87B /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		DBC19D0821FF8B1B00FA8D90 /* CPPStructuresProject */ = {
 			isa = PBXGroup;
 			children = (
+				DB6774422214AE5B00110EF9 /* Testers */,
 				DBC19D1021FF8B7C00FA8D90 /* Model */,
 				DBC19D1121FF8B8600FA8D90 /* Controller */,
 				DBC19D1321FF8B9400FA8D90 /* Diagrams */,
@@ -233,6 +246,7 @@
 				DBC19D1821FF8BF000FA8D90 /* Runner.cpp in Sources */,
 				DBD4FEC9220A19B700FDB228 /* FileController.cpp in Sources */,
 				DB109919220CB94B00561A42 /* Music.cpp in Sources */,
+				DB6774452214AEA100110EF9 /* LinearTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

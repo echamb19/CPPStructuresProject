@@ -35,7 +35,7 @@ public:
     void add(Type item);
     void addAtIndex(int index, Type item);
     Type getFromIndex(int index);
-    type remove(int index);
+    Type remove(int index);
 //    Type setAtIndex(int index, Type item);
     bool contains(Type item);
 };
@@ -43,8 +43,8 @@ public:
 template <class Type>
 LinkedList<Type> :: LinkedList()
 {
-    this->front = nullprt;
-    this->end = nullprt;
+    this->front = nullptr;
+    this->end = nullptr;
     this->size = 0;
 }
 
@@ -52,7 +52,7 @@ template<class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
-    while (front != nullprt)
+    while (front != nullptr)
     {
         front = destroyStructure->getNextNode();
         delete destroyStructure;
@@ -97,7 +97,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         }
         else
         {
-            LinearNode<Type> * prevous = nullptr;
+            LinearNode<Type> * previous = nullptr;
             LinearNode<Type> * current = front;
             for (int position = 0; position < index; position++)
             {
@@ -113,11 +113,11 @@ template<class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < this->size);
-    Type data:
+    Type data;
     
     LinearNode<Type> * current = front;
     
-    for (int position = 0; position < index; possition++)
+    for (int position = 0; position < index; position++)
     {
         current = current->getNextNode();
     }
@@ -178,7 +178,7 @@ LinearNode<Type> * LinkedList<Type> :: getEnd()
 }
 
 template<class Type>
-LinearNode<Type> * LinkeList<Type> :: getFront()
+LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
@@ -196,7 +196,7 @@ bool LinkedList<Type> :: contains(Type thingToFind)
     
     LinearNode<Type> * searchPointer = front;
     
-    for(int index = 0; incex < getSize(); index++)
+    for(int index = 0; index < getSize(); index++)
     {
         if(searchPointer->getData() == thingToFind)
         {

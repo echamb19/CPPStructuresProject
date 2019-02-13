@@ -70,7 +70,7 @@ void Stack<Type> :: add(Type data)
 }
 
 template <class Type>
-void Stack<Type> :; addAtIndex(int index, Type data)
+void Stack<Type> :: addAtIndex(int index, Type data)
 {
     assert(index == 0);
     push(data);

@@ -16,12 +16,29 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
+#include "../Model/Linear/Array.hpp"
+#include "../Model/Linear/LinkedList.hpp"
+//#include "../Model/NonLinear/BinarySearchTree.hpp"
 
 class FileController
 {
 public:
+    // Built in STL data Structures
     static vector<CrimeData> readCrimeDataToVector(string filename);
     static vector<Music> musicDataToVector(string filename);
+    
+    // OOP Array
+    static vector<Music> musicDataToArray(string filename);
+    
+    // LinkedLists
+    static LinkedList<CrimeData> readDataToList(string filename);
+    static LinkedList<Music> musicDataToList(string filename);
+    
+    // BST
+    //static BinarySearchTree<CrimeData> readDataToTree
+    //static BinarySearchTree<Music> musicDataToTree(string filename);
+    
+
 };
 
 #endif /* FileController_hpp */
