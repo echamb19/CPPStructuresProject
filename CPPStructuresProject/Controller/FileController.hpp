@@ -16,7 +16,7 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "../Model/Linear/Array.hpp"
+#include "../Model/Linear/Array.hpp"
 #include "../Model/Linear/LinkedList.hpp"
 //#include "../Model/NonLinear/BinarySearchTree.hpp"
 

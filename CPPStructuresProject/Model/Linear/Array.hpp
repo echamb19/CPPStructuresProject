@@ -57,7 +57,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     //Build Data Structure
     internalArray = new Type[size];
     
-    for(int index = 0; index < size; inde++)
+    for(int index = 0; index < size; index++)
     {
         internalArray[index] = toCopy[index];
     }
@@ -76,7 +76,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)  //We mad
     {
         if(size != toAssign.getSize())
         {
-            delete [] internalArray'
+            delete [] internalArray;
             size = toAssign.getSize();
             internalArray = new Type [size];
         }
@@ -90,17 +90,17 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)  //We mad
 }
 
 template <class Type>
-Type & Array<Type> :: operator [] (int index)
+Type& Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
 }
 
 template <class Type>
-Type Array<Type> :: operator [] (int index)
+Type Array<Type> :: operator [] (int index) const
 {
-    assert(index >= 0 && index < size)
-    return internalArray[index]
+    assert(index >= 0 && index < size);
+    return internalArray[index];
 }
 
 template <class Type>
@@ -114,7 +114,7 @@ Type Array<Type> :: getFromIndex(int index)
 {
     assert(index > 0 && index < size);
     
-    Type value - internalArray[index];
+    Type value = internalArray[index];
     
     return value;
 }

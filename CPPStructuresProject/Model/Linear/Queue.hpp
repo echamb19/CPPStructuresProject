@@ -21,7 +21,7 @@ public:
     ~Queue();
     
     // Queue Methods
-    void enqueue(Type data)
+    void enqueue(Type data);
     Type dequeue();
     Type peek();
     void clear();
@@ -42,7 +42,7 @@ Queue<Type> :: Queue() : LinkedList<Type>()
 template<class Type>
 Queue<Type> :: ~Queue()
 {
-    for(LinearNode<Type> * removed = this-> front; removed != nullprt; removed = this->front)
+    for(LinearNode<Type> * removed = this-> front; removed != nullptr; removed = this->front)
     {
         this->front = removed->getNextNode();
         delete removed;
@@ -112,8 +112,8 @@ void Queue<Type> :: clear()
     }
 }
 
-template<classType>
-Type Queue<TYpe> :: peek()
+template<class Type>
+Type Queue<Type> :: peek()
 {
     assert(this->size > 0);
     return this->getFront()->getData();

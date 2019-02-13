@@ -26,10 +26,7 @@ public:
     void testVsSTL();
 };
 
-template <class Type>
-void LinearTester<Type> :: testVsSTL()
-{
-    
-}
+//template <class Type>
+
 
 #endif /* LinearTester_hpp */
