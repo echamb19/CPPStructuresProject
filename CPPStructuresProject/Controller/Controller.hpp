@@ -13,15 +13,18 @@
 #include "../Model/Nodes/Node.hpp"
 #include "../Model/Nodes/LinearNode.hpp"
 #include "../Controller/FileController.hpp"
+#include "../Testers/LinearTester.hpp"
 
 using namespace std;
 
-void testFiles();
+//void testFiles();
+//int testVsSTL();
 
 class Controller
 {
 private:
     void usingNodes();
+    void testLinear();
 public:
     void start();
 };

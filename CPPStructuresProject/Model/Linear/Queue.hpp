@@ -10,7 +10,7 @@
 #define Queue_h
 
 #include "LinkedList.hpp"
-#include <iostream>>
+#include <iostream>
 using namespace std;
 
 template<class Type>
