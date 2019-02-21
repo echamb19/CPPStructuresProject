@@ -13,8 +13,8 @@ void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
 //    usingNodes();
-    testLinear();
-    
+//    testLinear();
+    testFiles();
 }
 
 void Controller :: usingNodes()
@@ -29,7 +29,7 @@ void Controller :: usingNodes()
 
 }
 
-void testFiles()
+void Controller :: testFiles()
 {
     vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
     
