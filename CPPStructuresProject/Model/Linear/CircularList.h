@@ -80,5 +80,60 @@ DoubleNode<Type> * CircularList<Type> :: findNode(int index)
     return nodeToFind;
 }
 
+template <class Type>
+void CircularList<Type> :: add(Type item)
+{
+    DoubleNode<Type> * addedNode;
+    if (this->size == 0)
+    {
+        addedNode = new DoubleNode<Type>(item);
+        this->front = addedNode;
+    }
+    else
+    {
+        addedNode = newDoubleNode<Type>(item, this->end, this->front);
+    }
+    
+    this->end->setNext(addedNode);
+    this->Front->setPrevioius(addedNode);
+    this->end = addedNode;
+    this->size++;
+}
+
+template<class Type>
+void CircularList<Type> :: addAtIndex(int index, Type item)
+{
+    assert (index >= 0 && index <= this->);
+    
+    DoubleNode<Type> * next;
+    DoubleNode<Type> * previous;
+    DoubleNode<Type> * addMe;
+    
+    if (index < this->size)
+    {
+        next = findNode(index);
+        previous = next->getPrevious();
+    }
+    else if (index == this->size)
+    {
+        next = this->front;
+        previous = this->end;
+    }
+    
+    addMe = new DoubleNode<Type>(item, previous, next);
+    
+    if(index == 0)
+    {
+        this->front = addMe;
+    }
+    else if (index == this->size)
+    {
+        this->end = addMe;
+    }
+    
+    previous->setNext(addMe);
+    next->setPrevious(addMe);
+    this->size++;
+}
 
 #endif /* CircularList_h */
