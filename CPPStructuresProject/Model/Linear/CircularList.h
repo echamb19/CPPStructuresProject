@@ -33,6 +33,52 @@ public:
     int getSize() const;
 };
 
+template <class Type>
+CircuularList<Type> :: CircularList()
+{
+    front = nullptr;
+    end = nullptr;
+    this->size = 0;
+}
+
+template <class Type>
+CircularList<Type> :: ~CircularList()
+{
+    DoubleNoode<Type> * current = front;
+    while(this->front != nullptr && this->front != front->getNext())
+    {
+        front = front->getNext();
+        delete current;
+        current = front;
+    }
+    delete front;
+}
+
+template <class Type>
+DoubleNode<Type> * CircularList<Type> :: findNode(int index)
+{
+    assert (index >= 0 && index < this->size);
+    DoubleNode<Type> * nodeToFind;
+    
+    if (index < this->size / 2)
+    {
+        nodeToFine = this->front;
+        for (int position = 0; position < index; position++)
+        {
+            nodeToFind = nodeToFind->getNext();
+        }
+    }
+    else
+    {
+        nodeToFind = this->end;
+        for (int position = this->size - 1; position > index; position--)
+        {
+            nodetoFind = nodeToFind->getPrevious();
+        }
+    }
+    
+    return nodeToFind;
+}
 
 
 #endif /* CircularList_h */
