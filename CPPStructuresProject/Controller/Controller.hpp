@@ -14,6 +14,7 @@
 #include "../Model/Nodes/LinearNode.hpp"
 #include "../Controller/FileController.hpp"
 #include "../Testers/LinearTester.hpp"
+#include "../Model/Linear/CircularList.hpp"
 
 using namespace std;
 
