@@ -46,6 +46,7 @@
 		DBC19D1721FF8BF000FA8D90 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		DBC19D1921FF912800FA8D90 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		DBC5D041221F27A000BEBACA /* DoubleNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleNode.h; sourceTree = "<group>"; };
+		DBC5D042221F313500BEBACA /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularList.h; sourceTree = "<group>"; };
 		DBD4FEC4220A160600FDB228 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		DBD4FEC5220A160600FDB228 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		DBD4FEC7220A19B700FDB228 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 				DB10991A220CC6C400561A42 /* LinkedList.hpp */,
 				DB58483E2212108200444040 /* Queue.hpp */,
 				DB58483F2212189200444040 /* Stack.hpp */,
+				DBC5D042221F313500BEBACA /* CircularList.h */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
