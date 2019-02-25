@@ -32,8 +32,8 @@
 		DB109917220CB94400561A42 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		DB109918220CB94B00561A42 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		DB10991A220CC6C400561A42 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		DB2276672224886E00FD2A75 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DB2EEC0B2208BC75001D9CDA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		DB58483D221200BF00444040 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DB58483E2212108200444040 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		DB58483F2212189200444040 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		DB6774432214AEA100110EF9 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		DBC19D1221FF8B8D00FA8D90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DB58483D221200BF00444040 /* music.csv */,
+				DB2276672224886E00FD2A75 /* music.csv */,
 				DB109918220CB94B00561A42 /* Music.cpp */,
 				DB109917220CB94400561A42 /* Music.hpp */,
 				DBD4FED1220A21E300FDB228 /* crime.csv */,

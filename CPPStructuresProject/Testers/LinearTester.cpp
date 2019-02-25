@@ -77,6 +77,11 @@ void LinearTester :: testVsSTL()
     cout << "This is the OOP Node random retrieval: " << endl;
     musicOOP.displayInformation();
     cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds." << endl;
+    
+    crimeTimerOOP.resetTimer();
+    crimeTimerSTL.resetTimer();
+    musicOOP.resetTimer();
+    musicSTL.resetTimer();
 }
 
 void LinearTester :: testVsStack()

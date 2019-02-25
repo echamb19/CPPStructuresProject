@@ -31,11 +31,11 @@ void Controller :: usingNodes()
 
 void Controller :: testFiles()
 {
-    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
+    vector<Music> musica = FileController :: musicDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/music.csv");
     
     for (int index = 234; index < 256; index++)
     {
-        cout << index << ": contents are: " << crimes[index] << endl;
+        cout << index << ": contents are: " << musica[index] << endl;
     }
         
 }
