@@ -103,7 +103,7 @@ void CircularList<Type> :: add(Type item)
 template<class Type>
 void CircularList<Type> :: addAtIndex(int index, Type item)
 {
-    assert(index >= 0 && index <= this->);
+    assert(index >= 0 && index <= this->size);
     
     DoubleNode<Type> * next;
     DoubleNode<Type> * previous;
