@@ -45,7 +45,7 @@ void LinearTester :: testVsSTL()
     musicOOP.resetTimer();
     musicSTL.resetTimer();
     
-    
+    // This Times getting a Random Index with our Method and the Standard Method 
     int randomIndex = rand() % moreCrimes.getSize();
     
     crimeTimerSTL.startTimer();
