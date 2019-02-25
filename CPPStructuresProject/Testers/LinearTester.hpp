@@ -24,6 +24,9 @@ class LinearTester
 {
 public:
     void testVsSTL();
+    void testVsStack();
+    void testVsQueue();
+    void testVsDouble();
 };
 
 //template <class Type>
