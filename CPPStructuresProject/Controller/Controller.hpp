@@ -27,6 +27,7 @@ private:
     void usingNodes();
     void testLinear();
     void testFiles();
+    void usingLinkedLists();
 public:
     void start();
 };

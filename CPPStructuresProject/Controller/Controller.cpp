@@ -8,6 +8,7 @@
 
 #include "Controller.hpp"
 #include "FileController.hpp"
+#include "../Model/Linear/LinkedList.hpp"
 
 void Controller :: start()
 {
@@ -44,4 +45,10 @@ void Controller :: testLinear()
 {
     LinearTester lookieHere;
     lookieHere.testVsSTL();
+}
+
+void Controller :: usingLinkedLists()
+{
+    
+    
 }

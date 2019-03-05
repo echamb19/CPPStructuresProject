@@ -25,7 +25,7 @@ public:
     // Constructors
     LinkedList();
     // Destructor
-    virtual ~LinkedList();  // Virtual so it can be overridden.
+    virtual ~LinkedList();  // Virtual so it can be overridden. 
     // Helper Methods
     int getSize() const;
     LinearNode<Type> * getFront();
