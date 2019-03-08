@@ -86,12 +86,33 @@ void LinearTester :: testVsSTL()
 
 void LinearTester :: testVsStack()
 {
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
+    Stack<CrimeData> stackOfCrime;
+    for(int n = 0; n < 10; n++)
+    {
+        stackOfCrime.push(crimes[n]);
+    }
     
+    while(stackOfCrime.getSize() > 0)
+    {
+        stackOfCrime.remove(0);
+
+    }
 }
 
 void LinearTester :: testVsQueue()
 {
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
+    Queue<CrimeData> queueOfCrime;
+    for(int n = 0; n < 10; n++)
+    {
+        queueOfCrime.add(crimes[n]);
+    }
     
+    while(queueOfCrime.getSize() > 0)
+    {
+        queueOfCrime.dequeue();
+    }
 }
 
 void LinearTester :: testVsDouble()
