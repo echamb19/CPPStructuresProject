@@ -138,7 +138,16 @@ void GraphTester :: compareTraversals()
 
 void GraphTester :: findCheapestTraversal()
 {
-    
+    for (int index = 0; index < puzzle.size(); index++)
+    {
+        cout << "Cost for Vertex " << index << " is " << puzzle.costTraversal(puzzle, index) << endl;
+        int currentNum = puzzle.costTraversal(puzzle, index);
+        int minNum = 3;
+        if(currentNum != 0 && currentNum < minNum)
+        {
+            
+        }
+    }
 }
 
 void GraphTester :: testGraphs()
