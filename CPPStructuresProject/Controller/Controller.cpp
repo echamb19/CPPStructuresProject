@@ -9,13 +9,17 @@
 #include "Controller.hpp"
 #include "FileController.hpp"
 #include "../Model/Linear/LinkedList.hpp"
+#include "../Testers/GraphTester.hpp"
 
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
 //    usingNodes();
-    testLinear();
+//    testLinear();
 //    testFiles();
+//    GraphTester() = test;
+//    test.testGraphs();
+    testGraphs();
 }
 
 void Controller :: usingNodes()
@@ -26,8 +30,6 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
     cout << wordHolder.getData() << endl;
-
-
 }
 
 void Controller :: testFiles()
@@ -38,7 +40,6 @@ void Controller :: testFiles()
     {
         cout << index << ": contents are: " << musica[index] << endl;
     }
-        
 }
 
 void Controller :: testLinear()
@@ -51,4 +52,10 @@ void Controller :: usingLinkedLists()
 {
     
     
+}
+
+void Controller :: testGraphs()
+{
+    GraphTester puzzle;
+    puzzle.testGraphs();
 }

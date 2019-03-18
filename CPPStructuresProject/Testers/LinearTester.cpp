@@ -117,5 +117,10 @@ void LinearTester :: testVsQueue()
 
 void LinearTester :: testVsDouble()
 {
-    
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/echa3557/Documents/C++ Projects/CPPStructuresProject/CPPStructuresProject/Resources/crime.csv");
+    DoubleNode<CrimeData> doubleNodeOfCrime;
+    for(int n = 0; n < 10; n++)
+    {
+       // doubleNodeOfCrime.setNext(crimes[n]);
+    }
 }

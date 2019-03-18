@@ -63,6 +63,12 @@ template <class Type>
 Graph<Type> :: Graph()
 {
     this->vertexCount = 0;
+    
+    for (int index = 0; index < MAXIMUM; index++)
+    {
+        int * row = weightCostMatrix[index];
+        std::fill_n(row, MAXIMUM, 0);
+    }
 }
 
 /*
@@ -198,7 +204,7 @@ template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     bool visitedVertices[MAXIMUM];
-    asserrt(vertex < currentGraph.size());
+    assert(vertex < currentGraph.size());
     std::fill_n(visitedVertices, currentGraph.size(), false);
     depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
