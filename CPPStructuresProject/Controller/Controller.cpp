@@ -10,6 +10,7 @@
 #include "FileController.hpp"
 #include "../Model/Linear/LinkedList.hpp"
 #include "../Testers/GraphTester.hpp"
+#include "../Model/Nodes/BinaryTreeNode.hpp"
 
 void Controller :: start()
 {

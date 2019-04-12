@@ -35,6 +35,7 @@
 		DB10991A220CC6C400561A42 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		DB2276672224886E00FD2A75 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		DB2EEC0B2208BC75001D9CDA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		DB3D184222610E2B00656768 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		DB58483E2212108200444040 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		DB58483F2212189200444040 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		DB6774432214AEA100110EF9 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 				DBC19D1921FF912800FA8D90 /* Node.hpp */,
 				DB81CE7B220232DE00FAB87B /* LinearNode.hpp */,
 				DBC5D041221F27A000BEBACA /* DoubleNode.hpp */,
+				DB3D184222610E2B00656768 /* BinaryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
