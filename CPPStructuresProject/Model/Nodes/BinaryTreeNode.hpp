@@ -83,6 +83,4 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftChild()
     return this-> left;
 }
 
-
-
 #endif /* BinaryTreeNode_h */
