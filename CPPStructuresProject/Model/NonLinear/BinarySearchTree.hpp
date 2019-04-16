@@ -6,8 +6,8 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef BinarySearchTree_h
-#define BinarySearchTree_h
+#ifndef BinarySearchTree_hpp
+#define BinarySearchTree_hpp
 
 #include "Tree.hpp"
 #include <iostream>

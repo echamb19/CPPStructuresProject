@@ -6,8 +6,8 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef Tree_h
-#define Tree_h
+#ifndef Tree_hpp
+#define Tree_hpp
 
 #include "../Nodes/BinaryTreeNode.hpp"
 
@@ -32,4 +32,4 @@ public:
     virtual void postOrderTreversal() = 0;
 };
 
-#endif /* Tree_h */
+#endif /* Tree_hpp */
