@@ -126,14 +126,69 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
     return balanceSubTree(parent);
 }
 
+/*
+ - if a negative value is returned than it means that the right side of the tree is bigger than the left
+ */
 template<class Type>
 int AVLTree<Type> :: heightDifference(BinaryTreeNode<Type> * node)
+{
+    int balance;
+    int leftHeight = this->calculateHeight(node->getLeftChild());
+    int rightHeight = this->calculateHeight(node->getRightChild());
+    balance = leftHeight - rightHeight;
+    return balance;
+}
+
+template<class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * parent)
+{
+    int balanceFactor = heightDifference(parent);
+    
+    if(balanceFactor > 1)
+    {
+        if(heightdifference(parent->getLeftchild()) > 0)
+        {
+            parent = leftRotation(parent);
+        }
+        else
+        {
+            parent = leftRightRotation(parent);
+        }
+    }
+    else if(balanceFactor < -1)
+    {
+        if(heightDifference(parent->getRightChilc()) > 0)
+        {
+            parent = rightLeftRotation(parent);
+        }
+        else
+        {
+            parent = rightRotation(parent);
+        }
+    }
+    return parent;
+}
+
+template<class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation(BinaryTreeNode<Type> * parent)
 {
     
 }
 
 template<class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * parent)
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template<class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightLeftRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template<class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation(BinaryTreeNode<Type> * parent)
 {
     
 }
