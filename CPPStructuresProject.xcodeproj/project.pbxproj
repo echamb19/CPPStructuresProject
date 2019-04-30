@@ -49,6 +49,7 @@
 		DB81CE7D22023A5700FAB87B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		DB82FE3A224010E700DE0309 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
 		DB82FE3B224010E700DE0309 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
+		DBA471692278C20800184A10 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		DBC19D0621FF8B1B00FA8D90 /* CPPStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC19D1421FF8BE400FA8D90 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		DBC19D1521FF8BE400FA8D90 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -200,6 +201,7 @@
 				DBD5D9DE2204D41800A51206 /* Graph.hpp */,
 				DB3D184622611C4D00656768 /* BinarySearchTree.hpp */,
 				DB3D184722611F3A00656768 /* Tree.hpp */,
+				DBA471692278C20800184A10 /* AVLTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
