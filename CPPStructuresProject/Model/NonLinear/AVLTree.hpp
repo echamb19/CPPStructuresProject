@@ -172,13 +172,29 @@ BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * p
 template<class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation(BinaryTreeNode<Type> * parent)
 {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getLeftChild();
     
+    parent->setLeftChild(changeNode->getRightChild());
+    
+    changeNode->setRightChild(parent);
+    parent->setRootNode(changeNode);
+    
+    return changeNode;
 }
 
 template<class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent)
 {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getRightChild();
     
+    parent->setRightChild(changeNode->getLeftChild());
+    
+    changeNode->setLeftChild(parent);
+    parent->setRootNode(changeNode);
+    
+    return changeNode;
 }
 
 template<class Type>
