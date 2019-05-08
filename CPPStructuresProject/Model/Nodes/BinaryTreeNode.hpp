@@ -16,8 +16,8 @@ class BinaryTreeNode : public Node<Type>
 {
 private:
     BinaryTreeNode<Type> * root;
-    BinaryTreeNode<Type> * leftChild;
-    BinaryTreeNode<Type> * rightChild;
+    BinaryTreeNode<Type> * left;
+    BinaryTreeNode<Type> * right;
 public:
     BinaryTreeNode<Type>();
     BinaryTreeNode<Type>(Type data);
@@ -35,16 +35,16 @@ template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
     root = nullptr;
-    leftChild = nullptr;
-    rightChild = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
     root = nullptr;
-    leftChild = nullptr;
-    rightChild = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>

@@ -11,6 +11,7 @@
 #include "../Model/Linear/LinkedList.hpp"
 #include "../Testers/GraphTester.hpp"
 #include "../Model/Nodes/BinaryTreeNode.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
 
 void Controller :: start()
 {
@@ -21,10 +22,12 @@ void Controller :: start()
 //    GraphTester() = test;
 //    test.testGraphs();
 //    testGraphs();
-    cout << simpleHash("Bears") << endl;
-    int size = 101;
-    int position = simpleHash("Bears")%size;
-    cout << position << endl;
+        cout << simpleHash("Bears") << endl;
+        int size = 101;
+        int position = simpleHash("Bears")%size;
+        cout << position << endl;
+    BinaryTreeTester myTester;
+    myTester.doTreeStuff();
 }
 
 void Controller :: usingNodes()
