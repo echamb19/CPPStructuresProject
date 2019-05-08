@@ -20,7 +20,11 @@ void Controller :: start()
 //    testFiles();
 //    GraphTester() = test;
 //    test.testGraphs();
-    testGraphs();
+//    testGraphs();
+    cout << simpleHash("Bears") << endl;
+    int size = 101;
+    int position = simpleHash("Bears")%size;
+    cout << position << endl;
 }
 
 void Controller :: usingNodes()
@@ -59,4 +63,14 @@ void Controller :: testGraphs()
 {
     GraphTester puzzle;
     puzzle.testGraphs();
+}
+
+long Controller :: simpleHash(string word)
+{
+    long hash = 0;
+    for (int index = 0; index < word.length(); index++)
+    {
+        hash += (int)(word[index]);
+    }
+    return hash;
 }

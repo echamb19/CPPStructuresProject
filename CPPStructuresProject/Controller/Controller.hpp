@@ -30,6 +30,7 @@ private:
     void testFiles();
     void usingLinkedLists();
     void testGraphs();
+    long simpleHash(string word);
 public:
     void start();
 };
