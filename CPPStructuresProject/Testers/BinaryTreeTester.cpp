@@ -21,8 +21,11 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.insert(3);
     
     testTree.inOrderTraversal();
+    cout << " " << endl;
     testTree.preOrderTraversal();
+    cout << " " << endl;
     testTree.postOrderTraversal();
+    cout << " " << endl;
     
     thisTree.insert("Apple");
     thisTree.insert("Ape");
@@ -34,6 +37,8 @@ void BinaryTreeTester :: doTreeStuff()
     thisTree.insert("Bear");
     
     thisTree.inOrderTraversal();
+    cout << " " << endl;
     thisTree.preOrderTraversal();
+    cout << " " << endl;
     thisTree.postOrderTraversal();
 }
