@@ -383,15 +383,15 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
     else if(removeMe->getRightChild() == nullptr)
     {
         temp = removeMe;
-        removeMe = removeMe->getLeftNode();
+        removeMe = removeMe->getLeftChild();
         
         if(previous != nullptr && temp->getData() < previous->getData())
         {
-            previous->setLeftNode(removeMe);
+            previous->setLeftChild(removeMe);
         }
         else if(previous != nullptr && temp->getData() > previous->getData())
         {
-            previous->setRightNode(removeMe);
+            previous->setRightChild(removeMe);
         }
         removeMe->setRootNode(previous);
         delete temp;
@@ -400,14 +400,14 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
     //Node has only a right child
     else if(removeMe->getLeftChild() == nullptr)
     {
-        temp = removeMe; removeMe = removeMe->getRightNode();
+        temp = removeMe; removeMe = removeMe->getRightChild();
         if(previous != nullptr && removeMe->getData() < previous->getData())
         {
-            previous->setLeftNode(removeMe);
+            previous->setLeftChild(removeMe);
         }
         else if(previous != nullptr && removeMe->getData() > previous->getData())
         {
-            previous->setRightNode(removeMe);
+            previous->setRightChild(removeMe);
         }
         removeMe->setRootNode(previous);
         delete temp;
@@ -416,22 +416,22 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
     //Node has both children
     else
     {
-        current = getRightMostChild(removeMe->getLeftNode());
+        current = getRightMostChild(removeMe->getLeftChild());
         
         previous = current->getRootNode();
         removeMe->setData(current->getData());
         
         if(previous == nullptr)//removing from the root
         {
-            removeMe->setLeftNode(current->getLeftNode());
+            removeMe->setLeftChild(current->getLeftChild());
         }
         else
         {
-            previous->setRightNode(current->getLeftNode());
+            previous->setRightChild(current->getLeftChild());
         }
-        if(current->getLeftNode() != nullptr)
+        if(current->getLeftChild() != nullptr)
         {
-            current->getLeftNode()->setRootNode(removeMe);
+            current->getLeftChild()->setRootNode(removeMe);
         }
         delete current;
     }
