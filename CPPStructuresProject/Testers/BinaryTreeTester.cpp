@@ -26,6 +26,11 @@ void BinaryTreeTester :: doTreeStuff()
     cout << " " << endl;
     testTree.postOrderTraversal();
     cout << " " << endl;
+    cout << "Balanced: " <<  testTree.isBalanced() << endl;
+    cout << "" << endl;
+    cout << "Complete: " << testTree.isComplete() << endl;
+    cout << " " << endl;
+
     
     thisTree.insert("Apple");
     thisTree.insert("Ape");
@@ -41,4 +46,10 @@ void BinaryTreeTester :: doTreeStuff()
     thisTree.preOrderTraversal();
     cout << " " << endl;
     thisTree.postOrderTraversal();
+    cout << " " << endl;
+    cout << "Balanced: " << thisTree.isBalanced() << endl;
+    cout << " " << endl;
+    cout << "Complete: " << thisTree.isComplete() << endl;
+    cout << " " << endl;
+
 }
