@@ -465,6 +465,7 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> ::  getRightMostChild(BinaryTreeNo
         previous = currentNode;
         currentNode = currentNode->getRightChild();
     }
+    return previous;
 }
 
 template <class Type>
