@@ -22,12 +22,18 @@ void Controller :: start()
 //    GraphTester() = test;
 //    test.testGraphs();
 //    testGraphs();
-        cout << simpleHash("Bears") << endl;
+        cout << "Bears -> " << simpleHash("Bears") << endl;
         int size = 101;
-        int position = simpleHash("Bears")%size;
-        cout << position << endl;
-    BinaryTreeTester myTester;
-    myTester.doTreeStuff();
+        int position = simpleHash("cat")%size;
+        int position1 = simpleHash("Eden")%size;
+        int position2 = simpleHash("Henrichsen")%size;
+        int position3 = simpleHash("The quick brown fox jumped over the lazy dog!")%size;
+    cout << "cat -> " << position << endl;
+    cout << "Eden -> " << position1 << endl;
+        cout << "Henrichsen -> " << position2 << endl;
+        cout << "The quick brown fox jumped over the lazy dog! -> " << position3 << endl;
+//    BinaryTreeTester myTester;
+//    myTester.doTreeStuff();
 }
 
 void Controller :: usingNodes()
